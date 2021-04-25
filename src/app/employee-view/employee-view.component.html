@@ -1,0 +1,7 @@
+<h4>List of Employee</h4>
+<ul class="employee">
+  <li *ngFor="let employee of employee | async; let i=index">
+    <span >{{i+1}}.</span> {{employee.name}}
+    <button style="float: right"     (click)="removeEmployee(i)">Remove</button>
+  </li>
+</ul>
